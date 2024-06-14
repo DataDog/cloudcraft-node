@@ -1,0 +1,23 @@
+{
+  "root": true,
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript/base",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:sonarjs/recommended-legacy",
+    "plugin:unicorn/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["unused-imports", "sonarjs"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "unused-imports/no-unused-imports": "error"
+  },
+  "ignorePatterns": ["node_modules/", "dist/"]
+}
