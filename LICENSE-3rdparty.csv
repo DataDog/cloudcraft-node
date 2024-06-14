@@ -1,0 +1,19 @@
+Component,Origin,License,Copyright
+@types/jest,https://github.com/DefinitelyTyped/DefinitelyTyped,MIT,Microsoft Corporation
+@types/node-fetch,https://github.com/DefinitelyTyped/DefinitelyTyped,MIT,Microsoft Corporation
+@typescript-eslint/eslint-plugin,https://github.com/typescript-eslint/typescript-eslint,MIT,JS Foundation and other contributors
+@typescript-eslint/parser,https://github.com/typescript-eslint/typescript-eslint,MIT,JS Foundation and other contributors
+eslint,https://github.com/eslint/eslint,MIT,OpenJS Foundation and other contributors
+eslint-config-airbnb-base,https://github.com/airbnb/javascript,MIT,Airbnb, Inc.
+eslint-config-airbnb-typescript,https://github.com/iamturns/eslint-config-airbnb-typescript,MIT,Matt Turnbull
+eslint-config-prettier,https://github.com/prettier/eslint-config-prettier,MIT,Simon Lydell and contributors
+eslint-plugin-import,https://github.com/import-js/eslint-plugin-import,MIT,Ben Mosher
+eslint-plugin-prettier,https://github.com/prettier/eslint-plugin-prettier,MIT,Andres Suarez and Teddy Katz
+husky,https://github.com/typicode/husky,MIT,Typicode
+jest,https://github.com/jestjs/jest,MIT,Contributors to the Jest project
+lint-staged,https://github.com/lint-staged/lint-staged,MIT,Andrey Okonetchnikov
+prettier,https://github.com/prettier/prettier,MIT,James Long and contributors
+ts-jest,https://github.com/kulshekhar/ts-jest,MIT,Kulshekhar Kabra
+typescript,https://github.com/Microsoft/TypeScript,Apache-2.0,Microsoft Corporation
+node-fetch,https://github.com/node-fetch/node-fetch,MIT,Node Fetch Team
+msw,https://github.com/mswjs/msw,MIT,Artem Zakharchenko
