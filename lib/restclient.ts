@@ -2,8 +2,6 @@
 // This product includes software developed at Datadog (https://www.datadoghq.com/).
 // Copyright 2024-Present Datadog, Inc.
 
-import fetch, { FetchError } from 'node-fetch';
-
 import { ClientConfig } from './clientconfig';
 import CloudcraftError from './error';
 
@@ -36,9 +34,10 @@ class CloudcraftRestClient {
                 headers: { Authorization: `Bearer ${this.apiKey}` },
             });
         } catch (error) {
-            if (error instanceof FetchError) {
+            if (error instanceof TypeError) {
                 throw new CloudcraftError(error.message);
             }
+
             throw error;
         }
 
@@ -93,9 +92,10 @@ class CloudcraftRestClient {
                 body: JSON.stringify(body),
             });
         } catch (error) {
-            if (error instanceof FetchError) {
+            if (error instanceof TypeError) {
                 throw new CloudcraftError(error.message);
             }
+
             throw error;
         }
 
@@ -124,9 +124,10 @@ class CloudcraftRestClient {
                 body: JSON.stringify(body),
             });
         } catch (error) {
-            if (error instanceof FetchError) {
+            if (error instanceof TypeError) {
                 throw new CloudcraftError(error.message);
             }
+
             throw error;
         }
 
@@ -161,9 +162,10 @@ class CloudcraftRestClient {
                 method: 'DELETE',
             });
         } catch (error) {
-            if (error instanceof FetchError) {
+            if (error instanceof TypeError) {
                 throw new CloudcraftError(error.message);
             }
+
             throw error;
         }
 
