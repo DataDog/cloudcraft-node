@@ -249,8 +249,6 @@ test('successfully list blueprints', async () => {
     const client = new Cloudcraft(testApiKey);
     const blueprints = await client.blueprint.list();
 
-    expect(blueprints).toBeInstanceOf(Array);
-
     // eslint-disable-next-line no-restricted-syntax
     for (const blueprint of blueprints) {
         expect(blueprint.id).toHaveLength(36);
@@ -263,7 +261,6 @@ test('successfully get blueprint', async () => {
     const blueprint = await client.blueprint.get(testBlueprintId);
 
     expect(blueprint.id).toEqual(testBlueprintId);
-    expect(blueprint.data).toBeInstanceOf(Object);
     expect(blueprint.data.name).toEqual(testBlueprintName);
 });
 

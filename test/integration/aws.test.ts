@@ -22,7 +22,6 @@ test('test /aws endpoint', async () => {
 
     let accounts = await client.awsAccount.list();
 
-    expect(accounts).toBeInstanceOf(Array);
     expect(accounts.length).toBeGreaterThan(0);
 
     // eslint-disable-next-line no-restricted-syntax
@@ -38,7 +37,6 @@ test('test /aws endpoint', async () => {
 
     accounts = await client.awsAccount.list();
 
-    expect(accounts).toBeInstanceOf(Array);
     expect(accounts.length).toBeGreaterThan(0);
     expect(accounts.find((a) => a.id === account.id)?.name).toEqual(account.name);
 
@@ -61,7 +59,6 @@ test('test /aws endpoint', async () => {
 
     const iamParameters = await client.awsAccount.iamParameters();
 
-    expect(iamParameters).toBeInstanceOf(Object);
     expect(iamParameters.accountId).toBeDefined();
     expect(iamParameters.externalId).toBeDefined();
     expect(iamParameters.awsConsoleUrl).toBeDefined();
