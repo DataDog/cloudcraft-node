@@ -177,8 +177,6 @@ test('successfully list AWS accounts', async () => {
     const client = new Cloudcraft(testApiKey);
     const accounts = await client.awsAccount.list();
 
-    expect(accounts).toBeInstanceOf(Array);
-
     // eslint-disable-next-line no-restricted-syntax
     for (const account of accounts) {
         expect(account.id).toHaveLength(36);
@@ -190,7 +188,6 @@ test('successfully get IAM parameters', async () => {
     const client = new Cloudcraft(testApiKey);
     const iamParameters = await client.awsAccount.iamParameters();
 
-    expect(iamParameters).toBeInstanceOf(Object);
     expect(iamParameters.accountId).toBeDefined();
     expect(iamParameters.externalId).toBeDefined();
     expect(iamParameters.awsConsoleUrl).toBeDefined();

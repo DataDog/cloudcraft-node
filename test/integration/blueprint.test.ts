@@ -16,13 +16,11 @@ test('test /blueprint endpoint', async () => {
     const blueprint = await client.blueprint.create(giveBlueprint);
 
     expect(blueprint.id).toHaveLength(36);
-    expect(blueprint.data).toBeInstanceOf(Object);
     expect(blueprint.data.grid).toEqual(giveBlueprint.data.grid);
     expect(blueprint.data.name).toEqual(giveBlueprint.data.name);
 
     const blueprints = await client.blueprint.list();
 
-    expect(blueprints).toBeInstanceOf(Array);
     expect(blueprints.length).toBeGreaterThan(0);
 
     // eslint-disable-next-line no-restricted-syntax

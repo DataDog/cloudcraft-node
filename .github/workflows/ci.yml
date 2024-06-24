@@ -2,7 +2,6 @@
 name: CI
 
 on:
-    workflow_dispatch: {}
     push:
         branches:
             - main
@@ -39,15 +38,15 @@ jobs:
             - name: Setup node
               uses: actions/setup-node@v4
               with:
-                  node-version: 18
+                  node-version: 22
                   registry-url: https://npm.pkg.github.com/
 
             - uses: actions/cache@v4
               id: yarn-cache
               with:
                   path: '**/node_modules'
-                  key: ${{ runner.os }}-node18-yarn-${{ hashFiles('**/yarn.lock') }}
-                  restore-keys: ${{ runner.os }}-node18-yarn-
+                  key: ${{ runner.os }}-node22-yarn-${{ hashFiles('**/yarn.lock') }}
+                  restore-keys: ${{ runner.os }}-node22-yarn-
 
             - name: Build Typescript
               run: yarn && yarn build
@@ -63,7 +62,7 @@ jobs:
             - name: Setup node
               uses: actions/setup-node@v4
               with:
-                  node-version: 18
+                  node-version: 22
                   registry-url: https://npm.pkg.github.com/
 
             - name: Get yarn cache directory path

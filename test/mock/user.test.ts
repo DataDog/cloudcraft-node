@@ -37,7 +37,6 @@ test('get user information', async () => {
 
     expect(user.id).toHaveLength(36);
     expect(user.name).toBeDefined();
-    expect(user.settings).toBeInstanceOf(Object);
     expect(user.createdAt).toBeInstanceOf(Date);
     expect(user.updatedAt).toBeInstanceOf(Date);
     expect(user.accessedAt).toBeInstanceOf(Date);

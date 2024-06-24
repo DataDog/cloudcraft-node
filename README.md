@@ -28,7 +28,7 @@ use. A [free trial of Cloudcraft Pro](https://www.cloudcraft.co/pricing) with AP
 
 ## Requirements
 
-Node 18 or higher.
+Node 22 or higher.
 
 ## Installation
 

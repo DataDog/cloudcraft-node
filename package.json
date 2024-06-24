@@ -43,11 +43,8 @@
         "ts-jest": "^29.1.4",
         "typescript": "5.4.5"
     },
-    "dependencies": {
-        "node-fetch": "2.6.7"
-    },
     "engines": {
-        "node": ">=18.*"
+        "node": ">=22.*"
     },
     "nyc": {
         "extension": [
