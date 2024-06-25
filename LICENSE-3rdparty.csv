@@ -4,7 +4,7 @@ Component,Origin,License,Copyright
 @typescript-eslint/eslint-plugin,https://github.com/typescript-eslint/typescript-eslint,MIT,JS Foundation and other contributors
 @typescript-eslint/parser,https://github.com/typescript-eslint/typescript-eslint,MIT,JS Foundation and other contributors
 eslint,https://github.com/eslint/eslint,MIT,OpenJS Foundation and other contributors
-eslint-config-airbnb-base,https://github.com/airbnb/javascript,MIT,Airbnb, Inc.
+eslint-config-airbnb-base,https://github.com/airbnb/javascript,MIT,Airbnb Inc.
 eslint-config-airbnb-typescript,https://github.com/iamturns/eslint-config-airbnb-typescript,MIT,Matt Turnbull
 eslint-config-prettier,https://github.com/prettier/eslint-config-prettier,MIT,Simon Lydell and contributors
 eslint-plugin-import,https://github.com/import-js/eslint-plugin-import,MIT,Ben Mosher
