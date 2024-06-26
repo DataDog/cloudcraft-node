@@ -12,8 +12,8 @@
         "api",
         "client"
     ],
-    "main": "dist/cloudcraft.js",
-    "types": "dist/cloudcraft.d.ts",
+    "main": "dist/lib/cloudcraft.js",
+    "types": "dist/lib/cloudcraft.d.ts",
     "homepage": "https://www.cloudcraft.co/",
     "repository": "https://github.com/DataDog/cloudcraft-node",
     "bugs": {
